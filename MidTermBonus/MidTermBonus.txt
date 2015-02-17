@@ -1,0 +1,12 @@
+1. What are the differences do you think between the first two ways of generating random number? Do you think the number rand1 generated in the first way still a random number? why?
+The first way generates random numbers first, then determine whether add 0.3 or not based on number value. Only part of value will be added 0.3. The second way generates numbers and multiple -0.7 then add 1 with all number generated.
+
+I don't think rand1 in first way is a random number. Because it doubles the frequency of numbers fall in range from 0.3 to 0.6. "rand1" which at first fell in rage from 0 to 0.3 had same probability with the number range from 0.3 to 0.6. But then those numbers were added 0.3 and fell into the range from 0.3 to 0.6 which double the frequency in range from 0.3 to 0.6.
+
+2. What's the difference of the curve you generated using way 2 and way 3. What feature do you think a random number function should have?
+Way 3 uses a function which generates numbers from “normal distribution” which also called “Gaussian distribution”. Way 3 generates numbers with different probability to fall in the ranges. 
+Way 2 generates numbers which have approximately equal probability to fall in the different ranges.
+
+I think a random number function should generate numbers to have approximately equal probability to fall in different ranges, which means in this case, all the 14 ranges should have basically equal frequency of random numbers. 
+From the plot images, we can tell that Way 2 is a best way to generate random numbers among these 3 ways. The fitted linear line is more closer to a horizontal line based on the scale of Y-axis.
+
