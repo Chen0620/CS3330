@@ -1,0 +1,3 @@
+The program will not work if we move the method to Main class.
+We created objects list and list2 of DoubleLinkdedList class in the Main class, when we called list.size or list.head in bubbleSort method, the size and head were not visible for using in Main class because they were defined private in the DoubleLinkedList class.
+
